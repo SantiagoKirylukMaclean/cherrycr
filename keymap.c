@@ -24,6 +24,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MACLOCK LGUI(LCTL(KC_Q))
 #define COPY LGUI(KC_C)
 #define PASTE LGUI(KC_V)
+#define L_PAGE KC_LCTL(KC_LEFT)
+#define R_PAGE KC_LCTL(KC_RIGHT)
 #define IJ_F LGUI(LSFT(KC_F))
 #define IJ_F_FILES LGUI(LSFT(KC_O))
 
@@ -32,11 +34,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
       KC_ESC, KC_QUOT, KC_COMM,  KC_DOT,    KC_P,    KC_Y,                      KC_F,    KC_G,    KC_C,    KC_R,    KC_L,    KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_TAB,    KC_A,    KC_O,    KC_E,    KC_U,    KC_I,                      KC_D,    KC_H,    KC_T,    KC_N,    KC_S,    KC_ENT,
+      LT(3,KC_TAB),    KC_A,    KC_O,    KC_E,    KC_U,    KC_I,                      KC_D,    KC_H,    KC_T,    KC_N,    KC_S,   LT(3,KC_ENT),
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_CAPS,KC_SCLN,    KC_Q,    KC_J,    KC_K,    KC_X,                      KC_B,    KC_M,    KC_W,    KC_V,    KC_Z,    RSFT_T(KC_PSLS),
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          LT(3,KC_LCTL),   MO(1),  KC_LGUI,     KC_SPC, MO(2), LT(3,KC_RALT)
+                                          KC_LCTL,   MO(1),  KC_LGUI,     KC_SPC, MO(2), KC_RALT
                                       //`--------------------------'  `--------------------------'
 
   ),
@@ -57,7 +59,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
        KC_TAB, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,                      XXXXXXX, KC_LPRN, KC_RPRN, XXXXXXX, XXXXXXX, KC_BSLS,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_TAB, KC_CIRC, KC_AMPR, KC_ASTR, XXXXXXX, XXXXXXX,                      XXXXXXX,  KC_LCBR, KC_RCBR, XXXXXXX, XXXXXXX,  KC_GRV,
+      KC_TAB, KC_CIRC, KC_AMPR, KC_ASTR, L_PAGE, R_PAGE,                      XXXXXXX,  KC_LCBR, KC_RCBR, XXXXXXX, XXXXXXX,  KC_GRV,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_CAPS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_LBRC, KC_RBRC, XXXXXXX, XXXXXXX, KC_TILD,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
