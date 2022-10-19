@@ -24,8 +24,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MACLOCK LGUI(LCTL(KC_Q))
 #define COPY LGUI(KC_C)
 #define PASTE LGUI(KC_V)
-#define L_PAGE KC_LCTL(KC_LEFT)
-#define R_PAGE KC_LCTL(KC_RIGHT)
+#define L_PAGE LCTL(KC_LEFT)
+#define R_PAGE LCTL(KC_RIGHT)
 #define IJ_F LGUI(LSFT(KC_F))
 #define IJ_F_FILES LGUI(LSFT(KC_O))
 
