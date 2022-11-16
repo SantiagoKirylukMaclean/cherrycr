@@ -26,8 +26,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PASTE LGUI(KC_V)
 #define L_PAGE LCTL(KC_LEFT)
 #define R_PAGE LCTL(KC_RIGHT)
-#define IJ_F LGUI(LSFT(KC_F))
+#define CUT_CLIP LSFT(LCTL(LGUI(KC_4)))
+#define CUT_FILE LSFT(LGUI(KC_4))
 #define IJ_F_FILES LGUI(LSFT(KC_O))
+#define IJ_F LGUI(LSFT(KC_F))
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_split_3x6_3(
@@ -47,9 +49,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
        KC_TAB,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                         KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_MINS,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCTL, XXXXXXX, XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT,                      KC_VOLU, XXXXXXX,   KC_UP,XXXXXXX, COPY, KC_EQL,
+        KC_LCTL, XXXXXXX, XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT,                      KC_VOLU, XXXXXXX,   KC_UP,XXXXXXX, CUT_FILE, KC_EQL,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_CAPS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_VOLD, KC_LEFT, KC_DOWN, KC_RIGHT, PASTE, KC_QUES,
+        KC_CAPS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_VOLD, KC_LEFT, KC_DOWN, KC_RIGHT, CUT_CLIP, KC_QUES,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           MACLOCK, _______, KC_LSFT,     KC_RSFT,   MO(3), KC_RALT
                                       //`--------------------------'  `--------------------------'
