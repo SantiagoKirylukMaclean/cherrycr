@@ -28,6 +28,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define R_PAGE LCTL(KC_RIGHT)
 #define CUT_CLIP LSFT(LCTL(LGUI(KC_4)))
 #define CUT_FILE LSFT(LGUI(KC_4))
+#define PLUS_SIZE LGUI(KC_PPLS)
+#define MIN_SIZE LGUI(KC_PMNS)
 #define IJ_F_FILES LGUI(LSFT(KC_O))
 #define IJ_F LGUI(LSFT(KC_F))
 
@@ -51,7 +53,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
         KC_LCTL, XXXXXXX, XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT,                      KC_VOLU, XXXXXXX,   KC_UP,XXXXXXX, CUT_FILE, KC_EQL,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-        KC_CAPS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_VOLD, KC_LEFT, KC_DOWN, KC_RIGHT, CUT_CLIP, KC_QUES,
+        KC_CAPS, XXXXXXX, XXXXXXX, XXXXXXX, L_PAGE, R_PAGE,                      KC_VOLD, KC_LEFT, KC_DOWN, KC_RIGHT, CUT_CLIP, KC_QUES,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           MACLOCK, _______, KC_LSFT,     KC_RSFT,   MO(3), KC_RALT
                                       //`--------------------------'  `--------------------------'
@@ -61,7 +63,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
        KC_TAB, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,                      XXXXXXX, KC_LPRN, KC_RPRN, XXXXXXX, XXXXXXX, KC_BSLS,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_TAB, KC_CIRC, KC_AMPR, KC_ASTR, L_PAGE, R_PAGE,                      XXXXXXX,  KC_LCBR, KC_RCBR, XXXXXXX, XXXXXXX,  KC_GRV,
+        KC_TAB, KC_CIRC, KC_AMPR, KC_ASTR, MIN_SIZE, PLUS_SIZE,                      XXXXXXX,  KC_LCBR, KC_RCBR, XXXXXXX, XXXXXXX,  KC_GRV,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_CAPS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_LBRC, KC_RBRC, XXXXXXX, XXXXXXX, KC_TILD,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
