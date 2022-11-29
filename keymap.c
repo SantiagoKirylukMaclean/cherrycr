@@ -20,7 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include QMK_KEYBOARD_H
 #include <stdio.h>
 
-// Adding macros to make the keymaps below much easier to read.
+// Adding macros to make the keymaps below much easier to read santi.
 #define MACLOCK LGUI(LCTL(KC_Q))
 #define COPY LGUI(KC_C)
 #define PASTE LGUI(KC_V)
